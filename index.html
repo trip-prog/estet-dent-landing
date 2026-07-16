@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTET DENT — Эстетика. Технологии. Доверие.</title>
+  <meta name="description" content="Частная стоматология премиум-класса. Лечение под микроскопом, цифровая диагностика, премиальные материалы. Запишитесь на бесплатную консультацию.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a140d'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23c9a876' font-family='Georgia'>E</text></svg>">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark">ED</span>
+      <span class="logo__text">ESTET&nbsp;DENT</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav__link">О клинике</a>
+      <a href="#services" class="nav__link">Услуги</a>
+      <a href="#doctors" class="nav__link">Врачи</a>
+      <a href="#prices" class="nav__link">Цены</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79991234567" class="header__phone">+7 (999) 123-45-67</a>
+      <a href="#booking" class="btn btn--gold btn--sm">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__content" data-reveal>
+      <p class="hero__tagline">Частная стоматология премиум-класса</p>
+      <h1 class="hero__title">Эстетика.<br>Технологии.<br>Доверие.</h1>
+      <p class="hero__subtitle">Комплексный подход к&nbsp;здоровью и&nbsp;красоте вашей улыбки.</p>
+      <ul class="hero__list">
+        <li>Лечение под микроскопом</li>
+        <li>Цифровая диагностика</li>
+        <li>Премиальные материалы</li>
+        <li>Персональный подход</li>
+      </ul>
+      <button class="hero__video" id="videoBtn">
+        <span class="hero__video-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        Видео о клинике
+      </button>
+    </div>
+
+    <div class="booking-card" id="booking" data-reveal>
+      <h2 class="booking-card__title">Онлайн-запись</h2>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <label class="field">
+          <span class="field__label">Услуга</span>
+          <select class="field__input" name="service" required>
+            <option value="Консультация" selected>Консультация</option>
+            <option value="Лечение кариеса">Лечение кариеса</option>
+            <option value="Имплантация">Имплантация</option>
+            <option value="Виниры">Виниры</option>
+            <option value="Отбеливание">Отбеливание</option>
+            <option value="Профгигиена">Профгигиена</option>
+          </select>
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Дата</span>
+            <input class="field__input" type="date" name="date" required>
+          </label>
+          <label class="field">
+            <span class="field__label">Время</span>
+            <select class="field__input" name="time" required>
+              <option>10:00</option><option>11:00</option><option>12:00</option>
+              <option>14:00</option><option>15:00</option><option>16:00</option>
+              <option>17:00</option><option>18:00</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label">Телефон</span>
+          <input class="field__input" type="tel" name="phone" id="phoneInput" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+        </label>
+        <button type="submit" class="btn btn--dark btn--block">Записаться</button>
+        <p class="booking-form__note">Перезвоним и&nbsp;подтвердим запись в&nbsp;течение 15&nbsp;минут</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats" id="about">
+  <div class="container stats__grid" data-reveal>
+    <div class="stat"><span class="stat__num" data-count="14">0</span><span class="stat__label">лет заботимся об&nbsp;улыбках</span></div>
+    <div class="stat"><span class="stat__num" data-count="7200" data-plus="+">0</span><span class="stat__label">довольных пациентов</span></div>
+    <div class="stat"><span class="stat__num" data-count="98" data-plus="%">0</span><span class="stat__label">приживаемость имплантов</span></div>
+    <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__label">лет гарантии на&nbsp;все работы</span></div>
+  </div>
+</section>
+
+<!-- ===== CASES ===== -->
+<section class="section cases">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="section-head__kicker">Результаты</p>
+        <h2 class="section-head__title">Кейсы наших пациентов</h2>
+      </div>
+      <p class="section-head__hint">Потяните за&nbsp;ползунок, чтобы сравнить «до» и&nbsp;«после»</p>
+    </div>
+    <div class="cases__grid" id="casesGrid" data-reveal>
+      <!-- карточки генерируются в main.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="section-head__kicker">Направления</p>
+        <h2 class="section-head__title">Услуги клиники</h2>
+      </div>
+    </div>
+    <div class="services__grid">
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 4c-3 0-4 2-7 2S4 8 4 12c0 6 3 9 4 14 .4 2 3 2 3.4 0L13 18c.4-1.6 5.6-1.6 6 0l1.6 8c.4 2 3 2 3.4 0 1-5 4-8 4-14 0-4-2-6-5-6s-4-2-7-2z"/></svg></div>
+        <h3 class="service__title">Лечение кариеса</h3>
+        <p class="service__text">Под микроскопом, без боли и&nbsp;повторных визитов. Пломбы из&nbsp;премиальных композитов.</p>
+        <span class="service__price">от 4 500 ₽</span>
+      </article>
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 4h8v10a4 4 0 0 1-8 0V4z"/><path d="M16 18v6m-3 4h6m-3-4v4"/></svg></div>
+        <h3 class="service__title">Имплантация</h3>
+        <p class="service__text">Системы Straumann и&nbsp;Osstem. 3D-планирование, приживаемость&nbsp;98%.</p>
+        <span class="service__price">от 45 000 ₽</span>
+      </article>
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="8" width="22" height="16" rx="3"/><path d="M5 14h22M11 8v16"/></svg></div>
+        <h3 class="service__title">Виниры</h3>
+        <p class="service__text">Керамика E.max. Цифровое моделирование улыбки до&nbsp;начала лечения.</p>
+        <span class="service__price">от 28 000 ₽</span>
+      </article>
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="16" cy="16" r="10"/><path d="M16 6V3m0 26v-3m10-10h3M3 16h3m14.5-7.5 2-2m-15 15-2 2m0-15-2-2m17 17-2-2"/></svg></div>
+        <h3 class="service__title">Отбеливание</h3>
+        <p class="service__text">ZOOM!&nbsp;4 — до&nbsp;8&nbsp;тонов светлее за&nbsp;один визит, без вреда для эмали.</p>
+        <span class="service__price">от 15 000 ₽</span>
+      </article>
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 26c6-2 8-8 8-14m4 14c6-2 8-8 8-14"/><circle cx="14" cy="7" r="3"/><circle cx="26" cy="7" r="3"/></svg></div>
+        <h3 class="service__title">Исправление прикуса</h3>
+        <p class="service__text">Элайнеры и&nbsp;брекеты. Прогноз результата в&nbsp;3D до&nbsp;установки.</p>
+        <span class="service__price">от 120 000 ₽</span>
+      </article>
+      <article class="service" data-reveal>
+        <div class="service__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 28s-9-6-9-13a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 13-9 13z"/></svg></div>
+        <h3 class="service__title">Профгигиена</h3>
+        <p class="service__text">Air&nbsp;Flow + ультразвук. Комфортная профилактика каждые полгода.</p>
+        <span class="service__price">от 6 000 ₽</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOCTORS ===== -->
+<section class="section doctors" id="doctors">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="section-head__kicker">Команда</p>
+        <h2 class="section-head__title">Врачи клиники</h2>
+      </div>
+    </div>
+    <div class="doctors__grid">
+      <article class="doctor" data-reveal>
+        <div class="doctor__photo"><span>АР</span></div>
+        <h3 class="doctor__name">Анна Романова</h3>
+        <p class="doctor__role">Главный врач · ортопед</p>
+        <p class="doctor__exp">Стаж 16 лет · 2000+ виниров</p>
+      </article>
+      <article class="doctor" data-reveal>
+        <div class="doctor__photo"><span>ДК</span></div>
+        <h3 class="doctor__name">Дмитрий Ковалёв</h3>
+        <p class="doctor__role">Хирург-имплантолог</p>
+        <p class="doctor__exp">Стаж 12 лет · 3500+ имплантаций</p>
+      </article>
+      <article class="doctor" data-reveal>
+        <div class="doctor__photo"><span>МС</span></div>
+        <h3 class="doctor__name">Мария Соколова</h3>
+        <p class="doctor__role">Терапевт · эндодонтист</p>
+        <p class="doctor__exp">Стаж 10 лет · лечение под микроскопом</p>
+      </article>
+      <article class="doctor" data-reveal>
+        <div class="doctor__photo"><span>ИЛ</span></div>
+        <h3 class="doctor__name">Игорь Лебедев</h3>
+        <p class="doctor__role">Ортодонт</p>
+        <p class="doctor__exp">Стаж 9 лет · сертификат Invisalign</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICES ===== -->
+<section class="section prices" id="prices">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="section-head__kicker">Прозрачно</p>
+        <h2 class="section-head__title">Цены</h2>
+      </div>
+      <p class="section-head__hint">Фиксируем стоимость в&nbsp;плане лечения — она не&nbsp;изменится</p>
+    </div>
+    <div class="prices__table" data-reveal>
+      <div class="price-row"><span>Консультация + план лечения</span><i></i><b>бесплатно</b></div>
+      <div class="price-row"><span>Профессиональная гигиена</span><i></i><b>6 000 ₽</b></div>
+      <div class="price-row"><span>Лечение кариеса</span><i></i><b>от 4 500 ₽</b></div>
+      <div class="price-row"><span>Отбеливание ZOOM! 4</span><i></i><b>15 000 ₽</b></div>
+      <div class="price-row"><span>Винир E.max (под ключ)</span><i></i><b>28 000 ₽</b></div>
+      <div class="price-row"><span>Имплантация Osstem (под ключ)</span><i></i><b>45 000 ₽</b></div>
+      <div class="price-row"><span>Элайнеры (полный курс)</span><i></i><b>от 120 000 ₽</b></div>
+    </div>
+    <p class="prices__note" data-reveal>Доступна рассрочка 0% до&nbsp;12&nbsp;месяцев без переплат и&nbsp;первого взноса.</p>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="section-head__kicker">Отзывы</p>
+        <h2 class="section-head__title">Что говорят пациенты</h2>
+      </div>
+    </div>
+    <div class="reviews__grid">
+      <blockquote class="review" data-reveal>
+        <div class="review__stars">★★★★★</div>
+        <p>Ставила виниры у&nbsp;Анны Сергеевны. Сначала показали 3D-модель будущей улыбки — результат совпал один в&nbsp;один. Ни разу не&nbsp;было больно.</p>
+        <footer><b>Екатерина В.</b><span>виниры E.max</span></footer>
+      </blockquote>
+      <blockquote class="review" data-reveal>
+        <div class="review__stars">★★★★★</div>
+        <p>Панически боялся стоматологов 10&nbsp;лет. Здесь вылечил 6&nbsp;зубов за&nbsp;3&nbsp;визита и&nbsp;понял, что бояться было нечего. Отдельное спасибо за&nbsp;рассрочку.</p>
+        <footer><b>Андрей М.</b><span>лечение кариеса</span></footer>
+      </blockquote>
+      <blockquote class="review" data-reveal>
+        <div class="review__stars">★★★★★</div>
+        <p>Имплантация всё-на-4 у&nbsp;Дмитрия Олеговича. Утром операция — вечером ужинала с&nbsp;новыми зубами. До&nbsp;сих пор не&nbsp;верится.</p>
+        <footer><b>Людмила П.</b><span>имплантация All-on-4</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="container cta__inner" data-reveal>
+    <div>
+      <h2 class="cta__title">Начните с&nbsp;бесплатной консультации</h2>
+      <p class="cta__text">Осмотр, диагностика и&nbsp;подробный план лечения с&nbsp;фиксированной ценой — за&nbsp;0&nbsp;₽.</p>
+    </div>
+    <a href="#booking" class="btn btn--gold btn--lg">Записаться на приём</a>
+  </div>
+</section>
+
+<!-- ===== CONTACTS / FOOTER ===== -->
+<footer class="footer" id="contacts">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="#" class="logo logo--footer">
+        <span class="logo__mark">ED</span>
+        <span class="logo__text">ESTET&nbsp;DENT</span>
+      </a>
+      <p class="footer__desc">Частная стоматология премиум-класса. Работаем ежедневно с&nbsp;9:00 до&nbsp;21:00.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Контакты</h4>
+      <a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a>
+      <a href="mailto:hello@estetdent.ru" class="footer__link">hello@estetdent.ru</a>
+      <p class="footer__link">Москва, ул. Остоженка, 12</p>
+    </div>
+    <div class="footer__col">
+      <h4>Навигация</h4>
+      <a href="#services" class="footer__link">Услуги</a>
+      <a href="#doctors" class="footer__link">Врачи</a>
+      <a href="#prices" class="footer__link">Цены</a>
+      <a href="#reviews" class="footer__link">Отзывы</a>
+    </div>
+    <div class="footer__col">
+      <h4>Запись</h4>
+      <p class="footer__desc">Оставьте заявку — администратор свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут.</p>
+      <a href="#booking" class="btn btn--gold btn--sm">Записаться онлайн</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 ESTET DENT. Демонстрационный сайт.</span>
+    <span>Имеются противопоказания, необходима консультация специалиста</span>
+  </div>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="successModal" role="dialog" aria-modal="true" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__card">
+    <div class="modal__icon">✓</div>
+    <h3 class="modal__title">Заявка отправлена</h3>
+    <p class="modal__text" id="modalText">Мы перезвоним вам в течение 15 минут и подтвердим запись.</p>
+    <button class="btn btn--dark btn--block" data-close>Отлично</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
